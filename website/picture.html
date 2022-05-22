@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>O'Pal Szalon</title>
+    <link rel="stylesheet" href="pictures.css" type="text/css">
+    <link rel="stylesheet" href="Interface.css" type="text/css">
+    <link rel="icon" href="ollo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>img[alt="www.000webhost.com"]{display: none;}</style>
+    <script src="Events.js"></script>
+    
+    <script>
+                                        /* if(window.innerWidth > 600) => For Mobile! */
+    function imgshow0() {
+     if(window.innerWidth > 600){    
+        document.getElementsByClassName("fullimg")[0].style.display = "block";
+        document.getElementsByClassName("imgbg")[0].style.display= "block";
+    }
+    }  
+        function imgshow1() {
+      if(window.innerWidth > 600){        
+        document.getElementsByClassName("fullimg")[1].style.display = "block";
+        document.getElementsByClassName("imgbg")[0].style.display= "block";
+    }  
+    }
+        function imgshow2() {
+      if(window.innerWidth > 600){        
+        document.getElementsByClassName("fullimg")[2].style.display = "block";
+        document.getElementsByClassName("imgbg")[0].style.display= "block";
+    }
+    }
+        function imgshow3() {
+      if(window.innerWidth > 600){        
+        document.getElementsByClassName("fullimg")[3].style.display = "block";
+        document.getElementsByClassName("imgbg")[0].style.display= "block";
+    } 
+    }
+        function imgshow4() {
+      if(window.innerWidth > 600){        
+        document.getElementsByClassName("fullimg")[4].style.display = "block";
+        document.getElementsByClassName("imgbg")[0].style.display= "block";
+    }  
+    }
+        function imgshow5() {
+      if(window.innerWidth > 600){
+        document.getElementsByClassName("fullimg")[5].style.display = "block";
+        document.getElementsByClassName("imgbg")[0].style.display= "block";
+    }
+    }
+        function imgshow6() {
+      if(window.innerWidth > 600){        
+        document.getElementsByClassName("fullimg")[6].style.display = "block";
+        document.getElementsByClassName("imgbg")[0].style.display= "block";
+    }
+    }
+        function imgshow7() {
+      if(window.innerWidth > 600){        
+        document.getElementsByClassName("fullimg")[7].style.display = "block";
+        document.getElementsByClassName("imgbg")[0].style.display= "block";
+    }
+    }
+        function imgshow8() {
+      if(window.innerWidth > 600){        
+        document.getElementsByClassName("fullimg")[8].style.display = "block";
+        document.getElementsByClassName("imgbg")[0].style.display= "block";
+    }
+    }
+        function imgclose() {
+     document.getElementsByClassName("imgbg")[0].style.display= "none";
+           for(var i=0;i<=8;i++) {
+        document.getElementsByClassName("fullimg")[i].style.display = "none";
+    }
+ }
+    </script>
+    
+</head>
+    
+<body onload="startTime(); resolution(); startDay(); pcormob()">
+
+<div class="background"></div>    
+ 
+<header class="headerp">
+    
+<img class="imgp" src="logo_fix.png" alt=" ">
+    <p id="ptext" style="position: absolute; top: 0.8%;">Idezet</p>
+
+</header>
+
+<div class="clock">
+    <p id="dayz"></p>
+    <p id="time"></p>  <!-- Clock -->
+</div>    
+
+<section>
+    
+    <img class="imgshowc" src="scissorsbackg.jpg" alt="" onclick="imgshow0()">
+    <img class="imgshowc" src="No_Image_Available.jpg" alt="" onclick="imgshow1()">
+    <img class="imgshowc" src="No_Image_Available.jpg" alt="" onclick="imgshow2()">
+    <img class="imgshowc" src="No_Image_Available.jpg" alt="" onclick="imgshow3()">
+    <img class="imgshowc" src="No_Image_Available.jpg" alt="" onclick="imgshow4()">      <!-- IMG DISPLAYED NORMAL -->
+    <img class="imgshowc" src="No_Image_Available.jpg" alt="" onclick="imgshow5()">
+    <img class="imgshowc" src="No_Image_Available.jpg" alt="" onclick="imgshow6()">
+    <img class="imgshowc" src="No_Image_Available.jpg" alt="" onclick="imgshow7()">
+    <img class="imgshowc" src="No_Image_Available.jpg" alt="" onclick="imgshow8()">
+        
+</section>
+        
+<aside>
+    
+<button id="navCloser" onclick="navClose()">X</button>
+<div class="navOpener" onclick="navOpen()">       <!-- Popup nav bar -->
+ <p><i></i></p>
+    
+    <div class="menu">
+        <ul>
+          <li><a href="index.html">Fooldal</a></li>
+          <li><a href="Naptar.html">Naptar</a></li>
+          <li><a href="Pictures.html">Kepek</a></li>
+          <li><a href="tortenetunk.php">Tortenetunk</a></li>
+        </ul>
+    </div>
+    
+</div>    
+  
+</aside>
+
+<footer>
+    
+<small>&copy;RicoPrograms 2018</small>
+<a href="https://www.facebook.com/pal.erik.7" target="_blank">    
+    <img src="facebook.png" alt=" "></a>
+    
+</footer>
+
+<div class="imgbg"><button id="closing" onclick="imgclose()">X</button></div>
+    <img class="fullimg" onclick="imgshow0()" src="scissorsbackg.jpg" alt="">
+    <img class="fullimg" onclick="imgshow1()" src="No_Image_Available.jpg" alt="">
+    <img class="fullimg" onclick="imgshow2()" src="No_Image_Available.jpg" alt="">
+    <img class="fullimg" onclick="imgshow3()" src="No_Image_Available.jpg" alt="">
+    <img class="fullimg" onclick="imgshow4()" src="No_Image_Available.jpg" alt="">    <!-- IMG FULL SIZE -->
+    <img class="fullimg" onclick="imgshow5()" src="No_Image_Available.jpg" alt="">
+    <img class="fullimg" onclick="imgshow6()" src="No_Image_Available.jpg" alt="">
+    <img class="fullimg" onclick="imgshow7()" src="No_Image_Available.jpg" alt="">
+    <img class="fullimg" onclick="imgshow8()" src="No_Image_Available.jpg" alt="">
+    
+</body>    
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<title>O'Pal Szalon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="naptar.css" type="text/css">
+    <link rel="stylesheet" href="Interface.css" type="text/css">
+    <link rel="icon" href="naptar.png">
+    <style>img[alt="www.000webhost.com"]{display: none;}</style>
+    <script src="Events.js"></script>
+    <script>
+  function mobileTable() {
+  var ctr = setTimeout(mobileTable, 0.1);      
+    if(window.innerWidth < 600) {
+        document.getElementsByTagName("section")[0].style.display = "none";
+        document.getElementsByClassName("mobileSection")[0].style.display = "block";
+    } else {
+        document.getElementsByClassName("mobileSection")[0].style.display = "none";
+        document.getElementsByTagName("section")[0].style.display = "block";
+    }
+      
+  }   
+      function Kopen() {
+        var k = document.getElementsByClassName("KeddSection")[0];   
+           if(k.style.display === "block") {
+               k.style.display = "none";
+           } else {
+              k.style.display = "block"; 
+              document.getElementsByClassName("szerdaSection")[0].style.display = "none";
+              document.getElementsByClassName("csutortokSection")[0].style.display = "none";
+              document.getElementsByClassName("pentekSection")[0].style.display = "none";
+              document.getElementsByClassName("szombatSection")[0].style.display = "none"; 
+           }
+      }
+    
+        function Szopen() {
+        var sz = document.getElementsByClassName("szerdaSection")[0];   
+           if(sz.style.display === "block") {
+               sz.style.display = "none";
+           } else {
+              sz.style.display = "block"; 
+              document.getElementsByClassName("KeddSection")[0].style.display = "none";
+              document.getElementsByClassName("csutortokSection")[0].style.display = "none";
+              document.getElementsByClassName("pentekSection")[0].style.display = "none";
+              document.getElementsByClassName("szombatSection")[0].style.display = "none"; 
+           }
+      }
+        function Csopen() {
+        var cs = document.getElementsByClassName("csutortokSection")[0];   
+           if(cs.style.display === "block") {
+               cs.style.display = "none";
+           } else {
+              cs.style.display = "block"; 
+              document.getElementsByClassName("KeddSection")[0].style.display = "none";
+              document.getElementsByClassName("szerdaSection")[0].style.display = "none";
+              document.getElementsByClassName("pentekSection")[0].style.display = "none";
+              document.getElementsByClassName("szombatSection")[0].style.display = "none"; 
+           }
+      }
+        function Popen() {
+        var p = document.getElementsByClassName("pentekSection")[0];   
+           if(p.style.display === "block") {
+               p.style.display = "none";
+           } else {
+              p.style.display = "block"; 
+              document.getElementsByClassName("KeddSection")[0].style.display = "none";
+              document.getElementsByClassName("szerdaSection")[0].style.display = "none";
+              document.getElementsByClassName("csutortokSection")[0].style.display = "none";
+              document.getElementsByClassName("szombatSection")[0].style.display = "none"; 
+           }
+      }
+        function Szoopen() {
+        var szo = document.getElementsByClassName("szombatSection")[0];   
+           if(szo.style.display === "block") {
+               szo.style.display = "none";
+           } else {
+              szo.style.display = "block"; 
+              document.getElementsByClassName("KeddSection")[0].style.display = "none";
+              document.getElementsByClassName("szerdaSection")[0].style.display = "none";
+              document.getElementsByClassName("csutortokSection")[0].style.display = "none";
+              document.getElementsByClassName("pentekSection")[0].style.display = "none"; 
+           }
+      }    
+    </script>
+</head>
+    
+<body onload="startTime(); resolution(); startDay(); pcormob()">  
+    
+<div class="background"></div>    
+    
+<header>
+
+<img src="logo_fix.png" alt=" ">
+    <p id="ptext">Idezet</p>
+    
+<div>
+    <p id="dayz"></p>
+    <p id="time"></p>  <!-- Clock -->
+</div>
+
+</header>    
+
+<section>
+    
+    <div class="th">
+    
+    <div class="tablehead" style="background-color: rgba(26,163,148, 0.5);">Ora</div>
+    <div class="tr">10-11</div>
+    <div class="tr">11-12</div>
+    <div class="tr">12-13</div>
+    <div class="tr">13-14</div>
+    <div class="tr">14-15</div>
+    <div class="tr">15-16</div>
+    <div class="tr">16-17</div>
+    <div class="tr">17-18</div>    
+        
+    </div>
+    
+   <div class="th">
+       
+    <div class="tablehead" style="background-color: rgba(255,0,0, 0.2);">Hetfo</div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    
+    </div>
+    
+    <div class="th">
+        
+    <div class="tablehead" style="background-color: rgba(255,255,0, 0.2);">Kedd</div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+        
+    </div>
+    
+    <div class="th">
+    
+    <div class="tablehead" style="background-color: rgba(255,255,0, 0.2);">Szerda</div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+        
+    </div>
+    
+    <div class="th">
+    
+    <div class="tablehead" style="background-color: rgba(255,255,0, 0.2);">Csut.</div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+        
+    </div>
+    
+    <div class="th">
+    
+    <div class="tablehead" style="background-color: rgba(255,255,0, 0.2);">Pentek</div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>    
+        
+    </div>
+    
+    <div class="th">
+    
+    <div class="tablehead" style="background-color: rgba(255,255,0, 0.2);">Szombat</div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>    
+        
+    </div>
+    
+    <div class="th">
+    
+    <div class="tablehead" style="background-color: rgba(255,0,0, 0.2);">Vasarnap</div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);">10:53</div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>
+    <div class="tr" style="background-color: rgba(255,0,0, 0.2);"></div>   
+        
+    </div>
+    
+</section>   
+    
+    <script> mobileTable(); </script>
+    
+    <div class="mobileSection">
+        <div class="sectionrow"><button class="tbutton" style="color:red" onclick="alert('zarva')">Hetfo</button></div>
+        <div class="sectionrow"><button class="tbutton" onclick="Kopen()">Kedd</button></div>
+        <div class="sectionrow"><button class="tbutton" onclick="Szopen()">Szerda</button></div>
+        <div class="sectionrow"><button class="tbutton" onclick="Csopen()">Csutortok</button></div>
+        <div class="sectionrow"><button class="tbutton" onclick="Popen()">Pentek</button></div>
+        <div class="sectionrow"><button class="tbutton" onclick="Szoopen()">Szombat</button></div>
+        <div class="sectionrow"><button class="tbutton" style="color:red" onclick="alert('zarva')">Vasarnap</button></div>
+    </div>
+    
+    <div class="KeddSection">
+        <div class="Keddrow" style="border-right: 3px solid grey;">
+             <div class="tido">10-11</div>
+             <div class="tido">11-12</div>
+             <div class="tido">12-13</div>
+             <div class="tido">13-14</div>
+             <div class="tido">14-15</div>
+             <div class="tido">15-16</div>
+             <div class="tido">16-17</div>
+             <div class="tido">17-18</div>
+        </div>
+        <div class="Keddrow">
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+        </div>
+    </div>
+    
+    <div class="szerdaSection">
+        <div class="szerdarow" style="border-right: 3px solid grey;">
+             <div class="tido">10-11</div>
+             <div class="tido">11-12</div>
+             <div class="tido">12-13</div>
+             <div class="tido">13-14</div>
+             <div class="tido">14-15</div>
+             <div class="tido">15-16</div>
+             <div class="tido">16-17</div>
+             <div class="tido">17-18</div>
+        </div>
+        <div class="szerdarow">
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+        </div>
+    </div>
+    
+    <div class="csutortokSection">
+        <div class="csutortokrow" style="border-right: 3px solid grey;">
+             <div class="tido">10-11</div>
+             <div class="tido">11-12</div>
+             <div class="tido">12-13</div>
+             <div class="tido">13-14</div>
+             <div class="tido">14-15</div>
+             <div class="tido">15-16</div>
+             <div class="tido">16-17</div>
+             <div class="tido">17-18</div>
+        </div>
+        <div class="csutortokrow">
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+        </div>
+    </div>
+    
+    <div class="pentekSection">
+        <div class="pentekrow" style="border-right: 3px solid grey;">
+             <div class="tido">10-11</div>
+             <div class="tido">11-12</div>
+             <div class="tido">12-13</div>
+             <div class="tido">13-14</div>
+             <div class="tido">14-15</div>
+             <div class="tido">15-16</div>
+             <div class="tido">16-17</div>
+             <div class="tido">17-18</div>
+        </div>
+        <div class="pentekrow">
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+        </div>
+    </div>
+    
+    <div class="szombatSection">
+        <div class="szombatrow" style="border-right: 3px solid grey;">
+             <div class="tido">10-11</div>
+             <div class="tido">11-12</div>
+             <div class="tido">12-13</div>
+             <div class="tido">13-14</div>
+             <div class="tido">14-15</div>
+             <div class="tido" style="background-color: rgba(255,0,0, 0.5)">15-16</div>
+             <div class="tido" style="background-color: rgba(255,0,0, 0.5)">16-17</div>
+             <div class="tido" style="background-color: rgba(255,0,0, 0.5)">17-18</div>
+        </div>
+        <div class="szombatrow">
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido"></div>
+             <div class="tido" style="background-color: rgba(255,0,0, 0.5)"></div>
+             <div class="tido" style="background-color: rgba(255,0,0, 0.5)"></div>
+             <div class="tido" style="background-color: rgba(255,0,0, 0.5)"></div>
+        </div>
+    </div>
+    
+<aside>
+
+<button id="navCloser" onclick="navClose()">X</button>
+<div class="navOpener" onclick="navOpen()">       <!-- Popup nav bar -->
+ <p><i></i></p>
+    
+    <div class="menu">
+        <ul>
+          <li><a href="index.html">Fooldal</a></li>
+          <li><a href="Naptar.html">Naptar</a></li>
+          <li><a href="picture.html">Kepek</a></li>
+          <li><a href="tortenetunk.php">Tortenetunk</a></li>
+        </ul>
+    </div>
+    
+</div>    
+  
+</aside>    
+   
+<footer>
+
+<small>&copy;RicoPrograms 2018</small>
+<a href="https://www.facebook.com/pal.erik.7" target="_blank">    
+    <img src="facebook.png" alt=" "></a>
+    
+</footer>
+    
+</body>    
+</html>
